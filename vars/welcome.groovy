@@ -19,12 +19,14 @@ def getBuildURL(){
 }
 
 def getRespoonse(String prompt1 = 'Please enter your data', String prompt2 = 'Please enter your data') {
+  timeout(time:60, unit: 'SECONDS'){
        def resp = input message: '<message>', parameters: [string(defaultValue: '',
        description: prompt1, name: 'RESPONSE1'), string(defaultValue: '', description: prompt2, name: 'RESPONSE2')]
         echo "${resp.RESPONSE1}"
         echo "${resp.RESPONSE2}"
         respoonse1 = resp.RESPONSE1
         respoonse2 = resp.RESPONSE2
+  }
        }
 def printRespoonse(){
   echo """user response1 = ${respoonse1} and user response2 = ${respoonse2}"""
