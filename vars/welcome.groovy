@@ -27,8 +27,7 @@ def getRespoonse(String prompt1 = 'Please enter your data', String prompt2 = 'Pl
         respoonse2 = resp.RESPONSE2
        }
 def printRespoonse(){
-  echo """user response1 = ${respoonse1} 
-          user response2 = ${respoonse2}       
-       """
+  echo """user response1 = ${respoonse1} and user response2 = ${respoonse2}"""
+      
 }
 
