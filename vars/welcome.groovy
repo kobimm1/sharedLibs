@@ -1,4 +1,4 @@
-ddef respoonse1
+def respoonse1
 def respoonse2
 
 def call (name){
