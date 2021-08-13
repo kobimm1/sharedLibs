@@ -1,4 +1,4 @@
-def respoonse1
+ddef respoonse1
 def respoonse2
 
 def call (name){
@@ -24,7 +24,7 @@ def getRespoonse(String prompt1 = 'Please enter your data', String prompt2 = 'Pl
         echo "${resp.RESPONSE1}"
         echo "${resp.RESPONSE2}"
         respoonse1 = resp.RESPONSE1
-        respoonse1 = resp.RESPONSE2
+        respoonse2 = resp.RESPONSE2
        }
 def printRespoonse(){
   echo """user response1 = ${respoonse1} 
